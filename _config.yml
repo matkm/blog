@@ -1,14 +1,14 @@
 # Site settings
 title: A Site
 description: "Site template built with Jekyll."
-url: "https://matkm.github.io/blog"
+url: "https://matkm.github.io/blog/"
 author:
   name: ""
   email: ""
   url: ""
 
 # Build settings
-baseurl: /blog # Change this to your relative path (ex: /blog/), or leave just a /
+baseurl: /blog/ # Change this to your relative path (ex: /blog/), or leave just a /
 markdown: kramdown
 source: .
 destination: ./_site
