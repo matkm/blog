@@ -1,1 +1,13 @@
-<footer class="footer"><span>@2015 - Emerald</span></footer>
+<footer class="footer">
+  <p>
+    <small>
+      Hosted on <a href="https://pages.github.com">GitHub Pages</a>
+      <br/>
+      {% if site.github.is_project_page %}
+        Maintained by <a class="" href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a>
+      {% endif %}
+      <br/>
+      <a class="" href="{{ site.github.repository_url }}">View on GitHub</a>
+    </small>
+  </p>
+</footer>
