@@ -1,11 +1,22 @@
 ---
 layout: default
 ---
+
+<h1>Blog</h1>
+
 <!-- Posts -->
 <ul id="posts">
 
-	{% for post in paginator.posts %}
+	<!--
+	Blog entries/posts are located in "_posts/" directory
+	with entry filenames in the format yyyy-mm-dd-title.md.
+	-->
 
+	{% for post in paginator.posts %}
+		<!--
+		Note that paginator works only in "index.html", and not in any other file including "index.md".
+		The "paginate_path" config value may be used to set the blog "index.html" path.
+		-->
 	  <li class="post">
 	  	<h2><a href="{% if site.baseurl == "/" %}{{ post.url }}{% else %}{{ post.url | prepend: site.baseurl }}{% endif %}">{{ post.title }}</a></h2>
 	  	<time datetime="{{ post.date | date_to_xmlschema }}" class="by-line">{{ post.date | date_to_string }}</time>
