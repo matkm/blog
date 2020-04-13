@@ -9,11 +9,16 @@ author:
 
 # Build settings
 baseurl: /blog/ # Change this to your relative path (ex: /blog/), or leave just a /
-markdown: kramdown
+# markdown: kramdown
+markdown: CommonMarkGhPages
+commonmark:
+   extensions:
+   - autolink
+
 source: .
 destination: ./_site
 permalink: /:title
-paginate: 8
+paginate: 3
 paginate_path: /blog/page:num/
 
 # Default values
