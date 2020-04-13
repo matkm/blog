@@ -1,4 +1,4 @@
 ---
-title: Small text
+title: Small text example
 ---
 This is an example of a blog post with small amount of text.
